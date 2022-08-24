@@ -4,11 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="register-container">
+        <div id="register-banner">
+            <div id="banner-layer">
+                <h1>Seja Bem-Vindo</h1>
+            </div>
+        </div>
+        <div id="register-form"></div>
+        <h2>Crie sua conta</h2>
+        <p>Registre-se para utilizar todas as funcionalidades do sistema</p>
+        <div class="form-control">
+        <label for="name">Nome</label>
+        <input type="text" name="name" id="name" placeholder="Digite seu nome">
+        </div>
+        <div class="form-control">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="name" placeholder="Digite seu E-mail">
+            </div>
+            <div class="form-control">
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" placeholder="Digite sua senha">
+                </div>
+                <p>Quer ajuda para criar uma senha segura? <span id="generate-password">Clique aqui</span>
+                
+                </p>
+                <div id="generated-password">
+                    <p>Aqui está a sua senha:</p>
+                    <h4></h4>
+                </div>
+                <div class="form-control">
+                    <label for="confirmpassword">Confirme sua senha</label>
+                    <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirme sua senha">
+                    </div>
+                    <input type="submit" value="Cadastrar">
+    </div>
 </body>
 </html>
