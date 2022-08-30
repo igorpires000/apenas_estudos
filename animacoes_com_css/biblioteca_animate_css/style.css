@@ -1,0 +1,17 @@
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.quadrado-azul{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    animation: animate__pulse;
+    animation-duration: 4s;
+    
+}
