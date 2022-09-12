@@ -1,17 +1,61 @@
 
-
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+section{
+    display: flex;
+    gap: 40px;
+}
+.item {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+/*Transições do Background*/
+.yellow{
+    background-color: yellow;
+}
+.transitionBackground{
+    transition: background-color 1s;
+}
+.transitionBackground:hover{
+    background-color: red;
+}
+/*Transições do tamanho da div*/
+.green{
+    background-color: green;
+}
+.transitionSize{
+    transition: transform 0.3s;
+}
+.transitionSize:hover{
+    transform: scale(2);
+}
+/*Rotacionando as divs*/
+.red{
+    background-color: red;
+}
+.transitionRotate{
+    transition: transform 0.5s;
+}
+.transitionRotate:hover{
+    transform: rotateZ(360deg);
+}
 
-.quadrado-azul{
+/*Transition Delay*/
+
+/*O delay é esse 0.5s adicionado depois do width 1s*/
+.transitionDelay{
+    transition: width 1s 0.5s, height 1s;
+}
+.transitionDelay:hover{
     width: 200px;
     height: 200px;
-    background-color: blueviolet;
-    animation: animate__pulse;
-    animation-duration: 4s;
-    
 }
