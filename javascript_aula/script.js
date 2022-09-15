@@ -35,3 +35,50 @@ console.log(soma(...valores))
 
 //Aula 14 Switch Case
 
+
+/*let num1 = 6;
+let num2 = 10;
+let num3 = 10;
+let resSom = num2 + num3
+let resSub = num2 - num3
+let resMul = num2 * num3
+let resDiv = num2 / num3
+
+switch(num1){
+    case 1: console.log(`A soma total é de: ${resSom} `)
+            
+        break;
+    case 2: console.log(`A soma total é de: ${resSub} `)
+            
+        break;
+    case 3: console.log(`A soma total é de: ${resMul} `)
+        break;
+    case 4: console.log(`A soma total é de: ${resDiv} `)
+        break;
+    
+    default: console.log("Selecione uma das operações");
+        break;
+}*/
+
+//Laço de repetição FOR
+
+/*for(let i = 0; i <= 20; i++){
+    console.log(`Escreva ${i}`);
+}*/
+
+//Loops FOR IN E FOR OF
+//São bons para Arrays
+
+/*let num = [10, 20,30,40,50];
+
+for(i in num){
+    console.log(num [i]); 
+    //Aqui eu preciso declar o num 
+    //Se eu não fizer ele vai imprimir
+    //Apenas a posição dos elementos
+}
+for(i of num){
+    console.log(i);
+}*/
+
+/*Loop While */
