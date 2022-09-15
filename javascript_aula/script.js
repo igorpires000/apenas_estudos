@@ -33,3 +33,5 @@ console.log(soma(...valores))
 
 //Aula 13 If / If Else
 
+//Aula 14 Switch Case
+
