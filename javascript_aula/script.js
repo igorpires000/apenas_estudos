@@ -82,3 +82,56 @@ for(i of num){
 }*/
 
 /*Loop While */
+//Calculando o fatorial de 'n'
+
+/*let n = 10;
+let fat = 1
+
+while(n >= 1){
+    fat*= n
+    //fat = fat*n
+    n--
+}
+console.log(fat);
+*/
+
+/*Break e Continue */
+//Serve para forçar a para de um loop
+/*
+let n = 0;
+let max = 1000;
+
+
+while(n<max){
+    console.log("Cursos " + n)
+    if(n >= 10){
+        //break;
+    }
+    n++
+}
+console.log("Fim do programa");
+*/
+/* 
+let n = 0;
+let max = 1000;
+let pares = 0
+for(let i = n; i < max; i++){
+    if(i%2!=0){
+        continue;
+    }
+    pares++
+}
+console.log("Pares " + pares);
+console.log("fim do programa")
+*/
+
+/*Funções Parte 1*/
+/*
+function nome(){
+    console.log("Curso")
+}
+
+for(let i =0; i < 10; i++){
+    nome();
+}
+ */
