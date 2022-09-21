@@ -136,3 +136,17 @@ for(let i =0; i < 10; i++){
 }
  */
 
+/*Funções Parte 2 */
+//Quando adicionar um 'return'
+//Apenas 1 pode ser executado.
+
+/*function cal(){
+    let n1 =12
+    let n2 =12
+    let res = n1+n2;
+    return res
+}
+
+console.log(cal());*/
+
+/*Funções parte 3 */
