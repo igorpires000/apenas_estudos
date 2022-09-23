@@ -31,7 +31,6 @@ console.log(soma(...valores))
 //o console consegue executar
 
 
-//Aula 13 If / If Else
 
 //Aula 14 Switch Case
 
@@ -95,58 +94,62 @@ while(n >= 1){
 console.log(fat);
 */
 
-/*Break e Continue */
-//Serve para forçar a para de um loop
+
+
+///////////////Funções Simples//////////////////////
+
 /*
-let n = 0;
-let max = 1000;
-
-
-while(n<max){
-    console.log("Cursos " + n)
-    if(n >= 10){
-        //break;
-    }
-    n++
+function imprimirNoConsole(){
+    console.log("Olá Mundo")
 }
-console.log("Fim do programa");
-*/
-/* 
-let n = 0;
-let max = 1000;
-let pares = 0
-for(let i = n; i < max; i++){
-    if(i%2!=0){
-        continue;
-    }
-    pares++
+
+imprimirNoConsole()
+
+function imprimirNum(num){
+    console.log(`O número é: ${num}`);
 }
-console.log("Pares " + pares);
-console.log("fim do programa")
+imprimirNum(2);
+
+const numAleatorio =function(){
+    console.log(Math.random());
+}
+
+numAleatorio();
+
+*/
+////////Outra forma de executar uma func//////
+/*function multiplicar(x,y,z){
+    return x*y*z;
+}
+console.log(multiplicar(2,3,4));
+
+const multi= multiplicar(5,4,8);
+
+console.log(`O valor de mult é: ${multi}`);
+
+
+
+function podeDirigir(idade, cnh){
+    if(idade >= 18 && cnh == true){
+        console.log("Pode dirgir")
+    }else if(idade < 18 && cnh == false){
+        console.log("Você não pode dirigir")
+    }else if(idade >= 18 && cnh == false)
+        console.log("Você precisa de uma cnh")
+}
+
+podeDirigir(18, true);
 */
 
-/*Funções Parte 1*/
+////Escopo de uma Function/////
+//Os dois "Y" são diferentes
 /*
-function nome(){
-    console.log("Curso")
+let y = 10
+
+function imprimir(){
+    let y =20;
+    console.log(y);
 }
-
-for(let i =0; i < 10; i++){
-    nome();
-}
- */
-
-/*Funções Parte 2 */
-//Quando adicionar um 'return'
-//Apenas 1 pode ser executado.
-
-/*function cal(){
-    let n1 =12
-    let n2 =12
-    let res = n1+n2;
-    return res
-}
-
-console.log(cal());*/
-
-/*Funções parte 3 */
+imprimir();
+console.log(y);
+*/
