@@ -153,3 +153,105 @@ function imprimir(){
 imprimir();
 console.log(y);
 */
+
+//Escopo aninhado (Nested Scopes)
+
+/*
+let a = 10; //Variavel a Global
+
+function somar(x,y){
+    let a = x+y;
+    console.log(a);  //Variavel a da function
+}
+
+if(a > 5){
+    let a = 6
+    console.log("Olá"); // Variavel a do if 
+}
+
+console.log(a);
+
+somar(1,10);
+
+//Todas as variaveis são diferentes
+*/
+
+//Arrow Functions
+/*
+const soma = (a, b) =>{
+    return a+b;
+}
+
+console.log(soma(5,5));
+
+const escreva = () =>{
+    console.log("Olá");
+}
+
+escreva();
+
+const ifOuElse = (a,b) => {
+    if(a > b){
+        console.log("A é maior que B")
+    }else{
+        console.log("B é maior que A");
+    }
+    }
+ifOuElse(5,15);
+
+
+const multiplicarPorDois = x => x * 2; // Ela é boa para funcoes com uma logica simples
+// Caso a function seja complexa, melhor optar por uma completa.
+
+console.log(multiplicarPorDois(5));
+*/
+
+//////////Argumentos Opcionais///////////
+/*
+function soma (a,b){
+    if(a === undefined || b === undefined){
+        console.log("Você precisa definir os 2 valores!")
+    }else{
+        return a + b;
+    }
+}
+
+soma(2)
+
+console.log(soma(2,3));
+
+function saudacao(nome, idade){
+    if(idade === undefined){
+        console.log(`Olá ${nome}`);
+    }else{ 
+        console.log(`Olá ${nome} você tem ${idade} anos.`);
+    }
+}
+
+saudacao("igor");
+
+saudacao("Joao", 23);
+*/
+
+
+/////Argumento DEFAULT/////
+/*
+function potencia(base, exp=2){ //O exp =2 é o default da função
+    return Math.pow(base, exp);
+}
+console.log(potencia(4));
+
+console.log(potencia(2,3));
+*/
+
+//Closure = Fechamento //////// Esse método será revisto com OO
+/* 
+function lembrarSoma(x){
+    return function(y){
+        return x + y;
+    }
+}
+
+let soma1 = lembrarSoma(2);
+console.log(soma1(5));
+*/
