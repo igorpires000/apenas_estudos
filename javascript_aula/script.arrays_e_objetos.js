@@ -138,4 +138,75 @@ let adicionado = pessoa.push("Kelen", 2, "Bruno") //Só adiciona a partir do úl
 console.log(removido)
 console.log(pessoa)
 
+
+
+//Métodos de array Shift e  Unshift
+
+let pessoa = ["JoaoBacabal", "FilhoDoido", "ZéBunda", "Ortigueiro"];
+
+
+let remover = pessoa.shift();//Tira o primeiro elemento
+
+console.log(pessoa)
+
+pessoa.unshift("Kleber"); //Adiciona o primeiro elemento
+
+console.log(pessoa)
+
+
+//Métodos de array indexOf e lastIndexOf
+
+let num = [4, 0, 1, 2, 7, 0];
+
+console.log(num.indexOf(0))//Identica a posição do elemento de forma crescente
+
+console.log(num.lastIndexOf(0))//Identica a posição do elemento de forma decrescente
+
+
+//Métodos de array slice
+
+let num = [4, 0, 1, 2, 7, 0];
+
+console.log(num.slice(0, 5));//Posso limitar até quantos elementos ele vai recuperar
+
+console.log(num.slice(0));//Pode pegar todos elementos da array
+
+
+
+//Métodos de array forEach
+
+let nomes = ["JoaoBacabal", "FilhoDoido", "ZéBunda", "Ortigueiro"];
+
+nomes.forEach(nome =>{
+    console.log(`O nome é ${nome}`);
+});
+
+//Essa função retorna o valor inteiro, ou seja, sem está dentro de uma array
+//e retorna todos os valores dentro da array """""""""""Faça o teste se tiver dúvida"""""""""""
+
+
+//Métodos de array Includes
+
+let nomes = ["JoaoBacabal", "FilhoDoido", "ZéBunda", "Ortigueiro"];
+
+console.log(nomes.includes("ZéBunda"));
+
+console.log(nomes.includes("Zébunda"));
+
+//Serve para achar um item bem específico
+//a escrita do item entre as aspas precisa está idêntico ao que
+//está na array, se não, retorna, false.
+
+
+let num = [0,1,2,3,4,5,6,7,8,9,10];
+
+console.log(num.reverse());
+
+//O nome já diz, aparece todos de trás pra frente
+
+
+//Métodos de string Trim
+let text = "teste       ";
+
+console.log(text.trim()); //Serve para tirar os espaços em branco
 */
