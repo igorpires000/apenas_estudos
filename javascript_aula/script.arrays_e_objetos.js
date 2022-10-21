@@ -209,4 +209,104 @@ console.log(num.reverse());
 let text = "teste       ";
 
 console.log(text.trim()); //Serve para tirar os espaços em branco
+
+
+//Método de string padStart e padEnd 
+
+let milAoContrario = '1';
+
+console.log(milAoContrario.padEnd(5, '0'));
+console.log(milAoContrario.padStart(5, '0'));
+
+//Adiciona string no inicio com Start e no final com o End
+
+
+//Método de string Split
+
+let frase = "Olá seja bem vindo ao inferno hahahaha";
+
+let palavras = frase.split(" ");
+
+console.log(palavras);
+
+let produto = "Banana;Maracujá;Morango;Amoeba";
+
+let mercado = produto.split(";");
+
+console.log(mercado)
+
+//Separa as strings e as coloca em array
+
+
+//Métodos string Join
+
+const elements = ['Fire', 'Air', 'Water'];
+
+console.log(elements.join());
+console.log(elements.join(''));
+console.log(elements.join('-'));
+
+//Só funciona se for uma array
+
+//Métodos string Repeat
+
+let palavra = "Igor";
+
+let repetir = palavra.repeat(20);
+
+console.log(repetir)
+
+//Serve para repetir a string 
+
+
+
+//Operador Rest
+
+let num1 = 27;
+let num2 = 65;
+let num3 = 23;
+let num4 = 54;
+let num5 = 11;
+let num6 = 99;
+let num7 = 100;
+
+
+function imprimirNum(...args){
+    for(let i = 0; i < args.length; i++){
+        console.log(args[i]);
+    }
+}
+
+imprimirNum(num1, num2, num3);
+console.log("Pausa 1");
+
+imprimirNum(num4, num5, num6);
+
+console.log("Pausa 2");
+
+imprimirNum(1,2,3,4,5,6,7,8,9,0);
+
+//Serve para imprimir as variaveis e os parametros que passei;
 */
+
+//Destructuring  com objetos
+
+const pessoa = {
+    name: "Igor",
+    lastName: "Pires"
+}
+
+const {name: fname, lastName: lname} = pessoa;
+
+console.log(fname);
+
+console.log(lname);
+
+//Dessa forma eu posso criar constantes para acessar a string como no exemplo
+//Com fname e lname, não preciso acessar diretamente com o name e lastName.
+
+
+
+
+
+
